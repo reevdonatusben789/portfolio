@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reev Donatus Ben | MCA Student &amp; Full-Stack Developer</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Reev Donatus Ben — MCA student and developer based in Kochi, Kerala. Building practical web applications, Flutter mobile apps, and AI/API integrations.">
+  <meta name="keywords" content="Reev Donatus Ben, MCA Student, Full-Stack Developer, Flutter, Dart, JavaScript, PHP, SQL, RoadTrip Pro, Kochi Kerala">
+  <meta name="author" content="Reev Donatus Ben">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Reev Donatus Ben | MCA Student &amp; Full-Stack Developer">
+  <meta property="og:description" content="Building practical digital experiences with code, creativity &amp; AI. Based in Kochi, Kerala, India.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/reev_avatar.jpg">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Reading Scroll Progress Indicator -->
+  <div id="scroll-progress" role="progressbar" aria-label="Reading Progress"></div>
+
+  <!-- Ambient Dynamic Canvas Background (Subtle Particles) -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Ambient Neon Radial Glow Orbs -->
+  <div class="bg-ambient-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-ambient-orb orb-2" aria-hidden="true"></div>
+  <div class="bg-ambient-orb orb-3" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container container">
+      <a href="#hero" class="brand-logo" aria-label="Reev Donatus Ben Homepage">
+        <div class="brand-logo-icon">R</div>
+        <div class="brand-text-wrap">
+          <span class="brand-title">Reev Donatus Ben</span>
+          <span class="brand-tag">//dev</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#roadtrip-pro" class="nav-link">RoadTrip Pro</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Journey</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions & Mobile Toggle -->
+      <div class="nav-actions">
+        <div class="badge-pill badge-status" title="Open for internships, collaborative projects &amp; development opportunities">
+          <span class="pulse-dot"></span>
+          <span>Available for Opportunities</span>
+        </div>
+        <a href="#resume" class="btn btn-secondary btn-sm" id="navResumeBtn">Resume</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+        
+        <button class="mobile-nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="mainContent">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Text Content -->
+          <div class="hero-content">
+            <div class="hero-kicker">
+              <div class="badge-pill badge-status">
+                <span class="pulse-dot"></span>
+                <span>Available for Opportunities</span>
+              </div>
+              <div class="badge-pill badge-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Kochi, Kerala, India</span>
+              </div>
+              <span style="color: var(--text-dim); font-size: 0.85rem; font-family: var(--font-mono); font-weight: 500;">
+                MCA Student &bull; Developer &bull; AI &amp; Tech Enthusiast
+              </span>
+            </div>
+
+            <h1 class="hero-title">
+              Building Practical <span class="text-gradient">Digital Experiences</span> with Code, Creativity &amp; AI.
+            </h1>
+
+            <p class="hero-desc">
+              Hi, I'm <strong style="color: #ffffff; white-space: nowrap;">Reev Donatus Ben</strong> — an MCA student and developer based in Kochi, Kerala, who enjoys building practical applications, exploring modern technologies, and turning ideas into useful digital experiences.
+            </p>
+
+            <!-- Hero Action Buttons -->
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn btn-primary">
+                <span>Explore Featured Projects</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#roadtrip-pro" class="btn btn-secondary">
+                <span>RoadTrip Pro Case Study</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </a>
+              <a href="#resume" class="btn btn-secondary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                <span>Download Resume</span>
+              </a>
+            </div>
+
+            <!-- Hero Honest Stats -->
+            <div class="hero-stats">
+              <div class="stat-card">
+                <div class="stat-number">MCA Scholar</div>
+                <div class="stat-label">Master of Computer Applications</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">4+ Projects</div>
+                <div class="stat-label">Web, Flutter &amp; Systems</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">BCA Graduate</div>
+                <div class="stat-label">Computer Applications Degree</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual: Professional Portrait Card -->
+          <div class="hero-visual">
+            <div class="profile-card-wrapper">
+              <div class="profile-glow-backdrop" aria-hidden="true"></div>
+              
+              <!-- Floating Dynamic Chips -->
+              <div class="floating-chip chip-web">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--indigo-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                <span>Full-Stack Web Dev</span>
+              </div>
+              <div class="floating-chip chip-app">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--cyan-light)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                <span>Flutter &amp; Mobile Apps</span>
+              </div>
+
+              <!-- Main Profile Portrait Card -->
+              <div class="profile-card">
+                <div class="profile-img-container">
+                  <img src="assets/images/reev_avatar.jpg" alt="Portrait of Reev Donatus Ben" class="profile-img" width="400" height="400">
+                </div>
+                <div class="profile-card-badge">
+                  <div>
+                    <div class="profile-name">Reev Donatus Ben</div>
+                    <div class="profile-role">MCA Student &bull; Developer</div>
+                  </div>
+                  <div class="badge-pill badge-location" style="padding: 4px 10px; font-size: 0.75rem;">
+                    <span>📍 Kochi, Kerala</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH TICKER MARQUEE -->
+    <section class="tech-ticker-section" aria-label="Technology Stack Ticker">
+      <div class="ticker-wrap">
+        <div class="ticker-track">
+          <!-- Set 1 -->
+          <div class="ticker-item"><span>⚡</span> C++</div>
+          <div class="ticker-item"><span>🌐</span> JavaScript (ES6+)</div>
+          <div class="ticker-item"><span>📱</span> Flutter &amp; Dart</div>
+          <div class="ticker-item"><span>🎨</span> HTML5 &amp; CSS3</div>
+          <div class="ticker-item"><span>🐘</span> PHP</div>
+          <div class="ticker-item"><span>🗄️</span> SQL &amp; DBMS</div>
+          <div class="ticker-item"><span>🔥</span> Firebase / Firestore</div>
+          <div class="ticker-item"><span>🐍</span> Python</div>
+          <div class="ticker-item"><span>🗺️</span> Google Maps API</div>
+          <div class="ticker-item"><span>🤖</span> AI &amp; Prompt Integration</div>
+          <div class="ticker-item"><span>🐙</span> Git &amp; GitHub</div>
+          <div class="ticker-item"><span>🐧</span> Linux / Bash</div>
+          <div class="ticker-item"><span>💻</span> VS Code &amp; Android Studio</div>
+          
+          <!-- Duplicate Set for Seamless Infinite Loop -->
+          <div class="ticker-item"><span>⚡</span> C++</div>
+          <div class="ticker-item"><span>🌐</span> JavaScript (ES6+)</div>
+          <div class="ticker-item"><span>📱</span> Flutter &amp; Dart</div>
+          <div class="ticker-item"><span>🎨</span> HTML5 &amp; CSS3</div>
+          <div class="ticker-item"><span>🐘</span> PHP</div>
+          <div class="ticker-item"><span>🗄️</span> SQL &amp; DBMS</div>
+          <div class="ticker-item"><span>🔥</span> Firebase / Firestore</div>
+          <div class="ticker-item"><span>🐍</span> Python</div>
+          <div class="ticker-item"><span>🗺️</span> Google Maps API</div>
+          <div class="ticker-item"><span>🤖</span> AI &amp; Prompt Integration</div>
+          <div class="ticker-item"><span>🐙</span> Git &amp; GitHub</div>
+          <div class="ticker-item"><span>🐧</span> Linux / Bash</div>
+          <div class="ticker-item"><span>💻</span> VS Code &amp; Android Studio</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section-py" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// BACKGROUND &amp; MOTIVATION</span>
+          <h2 class="section-title">Passionate About Practical Software Engineering</h2>
+          <p class="section-subtitle">
+            An MCA student focused on creating functional, user-oriented applications and continually advancing technical skills through real-world builds.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Left Bio Card -->
+          <div class="about-bio-card">
+            <div>
+              <h3 style="font-size: 1.35rem; color: #fff; margin-bottom: 14px;">Turning Concepts Into Useful Applications</h3>
+              <p>
+                I'm an MCA student passionate about software development and building applications that solve practical problems. I enjoy working across frontend development, application development, databases, APIs, and AI-assisted workflows. I'm comfortable learning new technologies based on project requirements and enjoy turning ideas into functional, user-friendly products.
+              </p>
+              <p style="margin-top: 14px;">
+                Based in <strong style="color: #fff;">Kochi, Kerala</strong>, I hold a Bachelor of Computer Applications (BCA) and am currently advancing my technical depth in my Master's program. My development experience spans creating multi-module web applications with real-time map APIs and database persistence, cross-platform mobile apps with Flutter, and automating systems tasks on Linux.
+              </p>
+              <p style="margin-top: 14px;">
+                I am actively open to development opportunities, software engineering internships, and entry-level positions where I can contribute to real projects and continue learning from experienced teams.
+              </p>
+            </div>
+
+            <div class="about-bio-footer">
+              <div class="badge-pill badge-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Based in Kochi, Kerala, India</span>
+              </div>
+              <div class="badge-pill badge-status">
+                <span class="pulse-dot"></span>
+                <span>Open for Opportunities</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Pillars Grid -->
+          <div class="about-pillars-grid">
+            
+            <div class="pillar-card">
+              <div class="pillar-icon">🌐</div>
+              <h4 class="pillar-title">Full-Stack Web Dev</h4>
+              <p class="pillar-desc">
+                Building responsive, accessible web interfaces using semantic HTML5, CSS3, vanilla JavaScript, and PHP backends.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">📱</div>
+              <h4 class="pillar-title">Mobile App Development</h4>
+              <p class="pillar-desc">
+                Crafting multi-screen, cross-platform mobile experiences with Flutter and Dart, focused on clean layouts and user flows.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">🗄️</div>
+              <h4 class="pillar-title">Databases &amp; System Design</h4>
+              <p class="pillar-desc">
+                Modeling normalized relational SQL schemas, implementing ER diagrams, and utilizing NoSQL collections in Firebase Firestore.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">🤖</div>
+              <h4 class="pillar-title">AI &amp; API Integration</h4>
+              <p class="pillar-desc">
+                Integrating Google Maps and external REST APIs, and adopting AI-assisted workflows to build smarter application features.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ROADTRIP PRO FEATURED CASE STUDY -->
+    <section class="section-py" id="roadtrip-pro" style="background: rgba(10, 13, 20, 0.4);">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// MAJOR ACADEMIC PROJECT CASE STUDY</span>
+          <h2 class="section-title">RoadTrip Pro &mdash; Smart Road Trip Planner</h2>
+          <p class="section-subtitle">
+            A comprehensive, car-focused road-trip planning application designed to unify route navigation, fuel and EV charging station discovery, expense tracking, and vehicle maintenance.
+          </p>
+        </div>
+
+        <div class="case-study-card">
+          
+          <!-- Hero Grid -->
+          <div class="case-study-hero-grid">
+            <div class="case-study-img-wrap">
+              <img src="assets/images/roadtrip_pro.jpg" alt="RoadTrip Pro Application Dashboard and Route Planner" class="case-study-img">
+            </div>
+
+            <div class="case-study-intro">
+              <div class="case-study-tag">
+                <span>⭐</span> MAJOR ACADEMIC CAPSTONE PROJECT
+              </div>
+              <h3 class="case-study-title">RoadTrip Pro</h3>
+              <p class="case-study-summary">
+                RoadTrip Pro is a car-focused road-trip planning application designed to help users plan journeys, estimate travel and fuel costs, discover places and fuel/EV stations along their route, manage vehicle information, and maintain trip history.
+              </p>
+              
+              <div>
+                <span style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-dim); text-transform: uppercase;">TECHNOLOGY STACK:</span>
+                <div class="case-study-tech-row">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3 (Responsive)</span>
+                  <span class="tech-tag">Vanilla JavaScript (ES6+)</span>
+                  <span class="tech-tag">Google Maps JavaScript API</span>
+                  <span class="tech-tag">Google Places API</span>
+                  <span class="tech-tag">Firebase Firestore</span>
+                  <span class="tech-tag">SessionStorage Persistence</span>
+                </div>
+              </div>
+
+              <div style="display: flex; gap: 12px; margin-top: 8px;">
+                <button type="button" class="btn btn-primary btn-sm view-project-btn" data-project-id="roadtrip">
+                  <span>Explore Architecture &amp; Details</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </button>
+                <a href="#projects" class="btn btn-secondary btn-sm">View in Project Grid</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Problem vs Solution Row -->
+          <div class="prob-sol-row">
+            <div class="prob-box">
+              <h4 class="prob-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                THE PROBLEM
+              </h4>
+              <p>
+                Planning road trips often requires switching between multiple services for routes, fuel costs, vehicle information, locations, and trip management. Travelers have to calculate fuel expenses manually, search separately for EV chargers or petrol pumps, and juggle disconnected notes for travel budgets and car maintenance.
+              </p>
+            </div>
+
+            <div class="sol-box">
+              <h4 class="sol-title">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                THE SOLUTION
+              </h4>
+              <p>
+                RoadTrip Pro combines these capabilities into one practical road-trip planning experience. It couples dynamic Google Maps corridor navigation with automated fuel/energy cost estimations, bi-directional map-and-card station discovery, integrated expense budgets, a vehicle maintenance garage, and persistent cloud trip logs.
+              </p>
+            </div>
+          </div>
+
+          <!-- 10 Key Features Grid -->
+          <div class="case-study-features-wrap">
+            <h4 class="features-subhead">Key Features &amp; Functional Modules</h4>
+            
+            <div class="features-10-grid">
+              
+              <div class="feature-item">
+                <div class="feature-item-icon">🗺️</div>
+                <div>
+                  <h5 class="feature-item-title">Route Planning</h5>
+                  <p class="feature-item-desc">Start and destination selection with interactive Google Maps driving corridor rendering and turn-by-turn route calculations.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-item-icon">⛽</div>
+                <div>
+                  <h5 class="feature-item-title">Fuel Cost Estimation</h5>
+                  <p class="feature-item-desc">Distance and mileage-based calculations determining fuel volume (Litres) or EV energy (kWh) with accurate journey cost estimates.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-item-icon">⚡</div>
+                <div>
+                  <h5 class="feature-item-title">Fuel &amp; EV Stations</h5>
+                  <p class="feature-item-desc">Route-corridor discovery for petrol/diesel pumps and EV charging points with ratings, open status, and one-tap Google Maps navigation.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-item-icon">📍</div>
+                <div>
+                  <h5 class="feature-item-title">Discover Places</h5>
+                  <p class="feature-item-desc">Highway point-of-interest discovery for scenic stopovers, tourist attractions, restaurants, and hotels along the travel corridor.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-item-icon">💰</div>
+                <div>
+                  <h5 class="feature-item-title">Trip Budget</h5>
+                  <p class="feature-item-desc">Structured financial tracking for fuel, stay, food, and incidentals to keep travel expenses organized before and during the journey.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-item-icon">👥</div>
+                <div>
+                  <h5 class="feature-item-title">Group Trips</h5>
+                  <p class="feature-item-desc">Collaborative trip planning allowing group travelers to coordinate itineraries, waypoints, and shared road milestones.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-item-icon">📖</div>
+                <div>
+                  <h5 class="feature-item-title">Trip Journal</h5>
+                  <p class="feature-item-desc">Personal travel logs to capture route notes, memorable road trip highlights, photos, and journal entries for every completed tour.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-item-icon">🚗</div>
+                <div>
+                  <h5 class="feature-item-title">Vehicle Management</h5>
+                  <p class="feature-item-desc">Dedicated vehicle garage to manage car specs, fuel efficiency, and track periodic service, insurance, and pollution certificate alerts.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-item-icon">🚨</div>
+                <div>
+                  <h5 class="feature-item-title">Emergency Features</h5>
+                  <p class="feature-item-desc">Direct emergency assistance integration including national emergency helpline (112) and highway assistance helpline (1033).</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-item-icon">🔄</div>
+                <div>
+                  <h5 class="feature-item-title">Trip History &amp; Persistence</h5>
+                  <p class="feature-item-desc">Seamless route persistence across page reloads via SessionStorage and persistent trip archiving with Firebase Cloud Firestore.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- OTHER GENUINE PROJECTS SECTION -->
+    <section class="section-py" id="projects">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// ACADEMIC &amp; PERSONAL WORK</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">
+            Authentic projects built during my MCA and BCA coursework, exploring web platforms, cross-platform mobile apps with Flutter, database systems, and Linux automation.
+          </p>
+        </div>
+
+        <!-- Project Filter Tabs -->
+        <div class="project-filters" role="tablist" aria-label="Filter Projects">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Projects (4)</button>
+          <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web &amp; Full-Stack</button>
+          <button class="filter-btn" data-filter="mobile" role="tab" aria-selected="false">Mobile (Flutter)</button>
+          <button class="filter-btn" data-filter="systems" role="tab" aria-selected="false">Systems &amp; Scripting</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- PROJECT 1: RoadTrip Pro -->
+          <article class="project-card" data-category="web">
+            <div class="project-img-box">
+              <img src="assets/images/roadtrip_pro.jpg" alt="RoadTrip Pro Route Planning Application Screenshot" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-badge-top">MAJOR CAPSTONE PROJECT</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-header-row">
+                <h3 class="project-title">RoadTrip Pro</h3>
+                <span class="project-type-tag">Major Academic Project</span>
+              </div>
+              <p class="project-desc">
+                A car-focused road-trip planning application designed to help users plan journeys, estimate travel and fuel costs, discover places and fuel/EV stations along their route, manage vehicle information, and maintain trip history.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Google Maps API</span>
+                <span class="tech-tag">HTML5 / CSS3</span>
+                <span class="tech-tag">Firebase Firestore</span>
+                <span class="tech-tag">Places API</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="view-project-btn" data-project-id="roadtrip">
+                  <span>View Details &amp; Architecture</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </button>
+                <a href="#roadtrip-pro" style="font-size: 0.85rem; color: var(--cyan); text-decoration: none; font-weight: 600;">Case Study &rarr;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Alibaba B2B Mobile Storefront (Flutter & Dart) -->
+          <article class="project-card" data-category="mobile">
+            <div class="project-img-box">
+              <img src="assets/images/project_app.jpg" alt="Alibaba Mobile E-Commerce Application Interface Screenshot" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-badge-top">FLUTTER &amp; DART</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-header-row">
+                <h3 class="project-title">Alibaba B2B Mobile Marketplace</h3>
+                <span class="project-type-tag">Mobile Application Project</span>
+              </div>
+              <p class="project-desc">
+                A cross-platform mobile e-commerce interface built using Flutter and Dart, replicating the multi-tab B2B shopping experience with manufacturer directories, regional supplier catalogs, tab-view navigation, and custom user profile management.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">Android Studio</span>
+                <span class="tech-tag">Material 3</span>
+                <span class="tech-tag">Mobile UI</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="view-project-btn" data-project-id="alibaba">
+                  <span>View Details &amp; Architecture</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </button>
+                <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">Dart SDK ^3.5.4</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Student Management & Academic DBMS Portal -->
+          <article class="project-card" data-category="web">
+            <div class="project-img-box">
+              <img src="assets/images/project_web.jpg" alt="Student Management Academic Portal Interface" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-badge-top">DBMS &amp; WEB PLATFORM</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-header-row">
+                <h3 class="project-title">Student Management &amp; Records System</h3>
+                <span class="project-type-tag">Academic Database Project</span>
+              </div>
+              <p class="project-desc">
+                An academic web database application designed to streamline student registration, course enrollments, attendance tracking, and examination grade management with relational schema integrity and normalized SQL tables.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">PHP</span>
+                <span class="tech-tag">MySQL / SQL</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">HTML5 / CSS3</span>
+                <span class="tech-tag">Relational DBMS</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="view-project-btn" data-project-id="student-mgmt">
+                  <span>View Details &amp; Architecture</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </button>
+                <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">Academic Capstone</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Linux System Monitoring & Automation Suite -->
+          <article class="project-card" data-category="systems">
+            <div class="project-img-box">
+              <img src="assets/images/project_ai.jpg" alt="Linux System Administration and Shell Scripting Dashboard" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <span class="project-badge-top">LINUX &amp; BASH AUTOMATION</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-header-row">
+                <h3 class="project-title">Linux System Monitoring &amp; Automation</h3>
+                <span class="project-type-tag">Academic Systems Project</span>
+              </div>
+              <p class="project-desc">
+                A laboratory automation suite engineered on Ubuntu 24.04 LTS featuring defensive Bash scripts for end-to-end telemetry auditing, dynamic time-aware user greetings, proactive disk threshold surveillance via syslog, and scheduled cron automation.
+              </p>
+              <div class="project-tags">
+                <span class="tech-tag">Bash Scripting</span>
+                <span class="tech-tag">Ubuntu 24.04</span>
+                <span class="tech-tag">Linux Telemetry</span>
+                <span class="tech-tag">Cron Jobs</span>
+                <span class="tech-tag">Python Utility</span>
+              </div>
+              <div class="project-actions">
+                <button type="button" class="view-project-btn" data-project-id="linux-monitor">
+                  <span>View Details &amp; Architecture</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </button>
+                <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">Course Code: CA750</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CORE COMPETENCIES & SKILLS SECTION -->
+    <section class="section-py" id="skills">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// TECHNICAL COMPETENCIES</span>
+          <h2 class="section-title">Skills &amp; Technology Stack</h2>
+          <p class="section-subtitle">
+            Technologies and tools I have actively worked with across academic coursework, personal applications, and continuous self-learning.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Programming Languages -->
+          <div class="skill-card">
+            <div class="skill-icon-box">⚡</div>
+            <h3 class="skill-title">Programming Languages</h3>
+            <p class="skill-desc">
+              Strong foundation in object-oriented programming, algorithmic problem-solving, and web/mobile application logic.
+            </p>
+            <div class="skill-pills">
+              <span class="skill-pill">C++ <span class="skill-level-tag">Intermediate</span></span>
+              <span class="skill-pill">JavaScript (ES6+) <span class="skill-level-tag">Working Knowledge</span></span>
+              <span class="skill-pill">Dart <span class="skill-level-tag">Working Knowledge</span></span>
+              <span class="skill-pill">PHP <span class="skill-level-tag">Working Knowledge</span></span>
+              <span class="skill-pill">Python <span class="skill-level-tag">Familiar</span></span>
+            </div>
+          </div>
+
+          <!-- Category 2: Web Development -->
+          <div class="skill-card">
+            <div class="skill-icon-box">🌐</div>
+            <h3 class="skill-title">Web Development</h3>
+            <p class="skill-desc">
+              Crafting structured, accessible, and responsive user interfaces with semantic markup, modern CSS layouts, and asynchronous JavaScript.
+            </p>
+            <div class="skill-pills">
+              <span class="skill-pill">HTML5 <span class="skill-level-tag">Intermediate</span></span>
+              <span class="skill-pill">CSS3 &amp; Flexbox/Grid <span class="skill-level-tag">Intermediate</span></span>
+              <span class="skill-pill">Vanilla JavaScript <span class="skill-level-tag">Working Knowledge</span></span>
+              <span class="skill-pill">Responsive Design <span class="skill-level-tag">Working Knowledge</span></span>
+              <span class="skill-pill">DOM APIs <span class="skill-level-tag">Working Knowledge</span></span>
+            </div>
+          </div>
+
+          <!-- Category 3: Mobile Development -->
+          <div class="skill-card">
+            <div class="skill-icon-box">📱</div>
+            <h3 class="skill-title">Application Development</h3>
+            <p class="skill-desc">
+              Building cross-platform mobile application interfaces with Flutter, utilizing widget hierarchies, responsive navigation, and device layouts.
+            </p>
+            <div class="skill-pills">
+              <span class="skill-pill">Flutter <span class="skill-level-tag">Working Knowledge</span></span>
+              <span class="skill-pill">Dart OOP <span class="skill-level-tag">Working Knowledge</span></span>
+              <span class="skill-pill">Material Design 3 <span class="skill-level-tag">Working Knowledge</span></span>
+              <span class="skill-pill">State Management Concepts <span class="skill-level-tag">Familiar</span></span>
+            </div>
+          </div>
+
+          <!-- Category 4: Databases & Storage -->
+          <div class="skill-card">
+            <div class="skill-icon-box">🗄️</div>
+            <h3 class="skill-title">Databases &amp; DBMS</h3>
+            <p class="skill-desc">
+              Designing relational schemas adhering to normalization principles (3NF), writing SQL queries, and utilizing cloud NoSQL storage.
+            </p>
+            <div class="skill-pills">
+              <span class="skill-pill">SQL &amp; MySQL <span class="skill-level-tag">Intermediate</span></span>
+              <span class="skill-pill">Relational DBMS <span class="skill-level-tag">Intermediate</span></span>
+              <span class="skill-pill">Firebase Firestore <span class="skill-level-tag">Working Knowledge</span></span>
+              <span class="skill-pill">ER Diagram Modeling <span class="skill-level-tag">Intermediate</span></span>
+              <span class="skill-pill">Web Storage APIs <span class="skill-level-tag">Working Knowledge</span></span>
+            </div>
+          </div>
+
+          <!-- Category 5: AI, APIs & Tools -->
+          <div class="skill-card">
+            <div class="skill-icon-box">🤖</div>
+            <h3 class="skill-title">AI &amp; API Integration</h3>
+            <p class="skill-desc">
+              Integrating third-party location and web services, coupled with modern prompt engineering and AI-assisted development workflows.
+            </p>
+            <div class="skill-pills">
+              <span class="skill-pill">Google Maps API <span class="skill-level-tag">Working Knowledge</span></span>
+              <span class="skill-pill">Google Places API <span class="skill-level-tag">Working Knowledge</span></span>
+              <span class="skill-pill">REST API Integration <span class="skill-level-tag">Working Knowledge</span></span>
+              <span class="skill-pill">Prompt Engineering <span class="skill-level-tag">Working Knowledge</span></span>
+              <span class="skill-pill">AI-Assisted Dev <span class="skill-level-tag">Working Knowledge</span></span>
+            </div>
+          </div>
+
+          <!-- Category 6: Developer Environments & Core Strengths -->
+          <div class="skill-card">
+            <div class="skill-icon-box">🛠️</div>
+            <h3 class="skill-title">Tools &amp; Core Strengths</h3>
+            <p class="skill-desc">
+              Version control, development tooling, operating system command-line administration, and analytical problem-solving skills.
+            </p>
+            <div class="skill-pills">
+              <span class="skill-pill">Git &amp; GitHub <span class="skill-level-tag">Working Knowledge</span></span>
+              <span class="skill-pill">VS Code <span class="skill-level-tag">Proficient</span></span>
+              <span class="skill-pill">Android Studio <span class="skill-level-tag">Working Knowledge</span></span>
+              <span class="skill-pill">Linux / Bash CLI <span class="skill-level-tag">Working Knowledge</span></span>
+              <span class="skill-pill">Problem Solving</span>
+              <span class="skill-pill">Continuous Learning</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ACADEMIC & PROJECT EXPERIENCE (JOURNEY) -->
+    <section class="section-py" id="experience" style="background: rgba(10, 13, 20, 0.4);">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// ACADEMIC &amp; PROJECT JOURNEY</span>
+          <h2 class="section-title">Academic &amp; Project Experience</h2>
+          <p class="section-subtitle">
+            A progression from core computer application fundamentals to architecting comprehensive web and mobile applications.
+          </p>
+        </div>
+
+        <div class="timeline-wrap">
+          
+          <!-- Timeline 1: MCA -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Master of Computer Applications (MCA) &mdash; Project Development</h3>
+                  <span class="company-name">Postgraduate Program &bull; Kristu Jayanti College</span>
+                </div>
+                <span class="timeline-date">2024 &ndash; Present</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Architected and implemented <strong>RoadTrip Pro</strong>, a comprehensive 12-module road trip planning web application with Google Maps API, route stations discovery, and Firebase Firestore persistence.</li>
+                <li>Conducted laboratory practicals in Linux administration and automated system health reporting using Bash scripting on Ubuntu 24.04 LTS.</li>
+                <li>Studied advanced database management systems, relational normalization (3NF), software engineering principles, and enterprise application patterns.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline 2: Mobile & Web Exploration -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Mobile App &amp; Web Project Development</h3>
+                  <span class="company-name">Independent &amp; Coursework Projects</span>
+                </div>
+                <span class="timeline-date">2023 &ndash; 2024</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Developed cross-platform mobile UI applications with Flutter and Dart, including the Alibaba B2B Marketplace clone with regional catalogs and nested tab navigation.</li>
+                <li>Explored local data persistence with Hive and cloud integration with Firebase Firestore for mobile data management.</li>
+                <li>Built academic database portals in PHP and SQL, focusing on secure CRUD operations, form validation, and relational database integrity.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Timeline 3: BCA -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="role-title">Bachelor of Computer Applications (BCA)</h3>
+                  <span class="company-name">Undergraduate Program &bull; Kristu Jayanti College (Autonomous), Bengaluru</span>
+                </div>
+                <span class="timeline-date">2021 &ndash; 2024</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Acquired strong foundations in core computing: Data Structures and Algorithms (C++), Relational Database Management Systems (SQL), Object-Oriented Programming (Java/C++), and Web Development.</li>
+                <li>Completed academic laboratory records, practical programming assignments, and collaborative team mini-projects.</li>
+                <li>Graduated with a solid academic record and proven ability to grasp new programming languages and frameworks.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section-py" id="education">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// FORMAL EDUCATION</span>
+          <h2 class="section-title">Academic Qualifications</h2>
+          <p class="section-subtitle">
+            Formal educational background providing foundational depth in computer science, software engineering, and application development.
+          </p>
+        </div>
+
+        <div class="education-grid">
+          
+          <!-- Education 1: MCA -->
+          <div class="education-card">
+            <div>
+              <span class="education-badge">CURRENT POSTGRADUATE</span>
+              <h3 class="education-title">Master of Computer Applications (MCA)</h3>
+              <div class="education-inst">Kristu Jayanti College (Autonomous), Bengaluru</div>
+              <p class="education-desc">
+                Focusing on advanced application development, software engineering methodologies, Linux system administration, and practical full-stack project implementations.
+              </p>
+            </div>
+            <div class="education-courses">
+              <span class="course-pill">Full-Stack Development</span>
+              <span class="course-pill">Advanced DBMS</span>
+              <span class="course-pill">Linux Admin (CA750)</span>
+              <span class="course-pill">2024 &ndash; 2026</span>
+            </div>
+          </div>
+
+          <!-- Education 2: BCA -->
+          <div class="education-card">
+            <div>
+              <span class="education-badge" style="background: rgba(6, 182, 212, 0.1); color: var(--cyan-light); border-color: rgba(6, 182, 212, 0.3);">GRADUATED</span>
+              <h3 class="education-title">Bachelor of Computer Applications (BCA)</h3>
+              <div class="education-inst">Kristu Jayanti College (Autonomous), Bengaluru</div>
+              <p class="education-desc">
+                Comprehensive three-year undergraduate program providing foundational excellence in computer science, programming languages, algorithms, and database systems.
+              </p>
+            </div>
+            <div class="education-courses">
+              <span class="course-pill">Data Structures (C++)</span>
+              <span class="course-pill">Java &amp; OOP</span>
+              <span class="course-pill">RDBMS &amp; SQL</span>
+              <span class="course-pill">2021 &ndash; 2024</span>
+            </div>
+          </div>
+
+          <!-- Education 3: Plus Two -->
+          <div class="education-card">
+            <div>
+              <span class="education-badge" style="background: rgba(16, 185, 129, 0.1); color: var(--emerald-light); border-color: rgba(16, 185, 129, 0.3);">COMPLETED</span>
+              <h3 class="education-title">Higher Secondary (+2 Science)</h3>
+              <div class="education-inst">Kerala State Higher Secondary Board</div>
+              <p class="education-desc">
+                Higher secondary education with a specialized focus on Computer Science, Mathematics, Physics, and Chemistry.
+              </p>
+            </div>
+            <div class="education-courses">
+              <span class="course-pill">Computer Science</span>
+              <span class="course-pill">Mathematics</span>
+              <span class="course-pill">Physics &amp; Chemistry</span>
+              <span class="course-pill">2019 &ndash; 2021</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RESUME BANNER CALLOUT -->
+        <div class="resume-banner" id="resume">
+          <div class="resume-banner-text">
+            <span class="badge-pill badge-status" style="margin-bottom: 8px;">CURRICULUM VITAE</span>
+            <h3>Looking for My Complete Qualifications &amp; Resume?</h3>
+            <p>
+              Download my updated resume to review detailed academic coursework, completed project milestones, technical skill sets, and contact details.
+            </p>
+          </div>
+          <div class="resume-actions">
+            <button type="button" class="btn btn-primary" id="viewResumeModalBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <span>View Resume Summary</span>
+            </button>
+            <button type="button" class="btn btn-secondary" id="downloadResumeBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download Resume</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section-py" id="contact">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">// GET IN TOUCH</span>
+          <h2 class="section-title">Let&#39;s Build Something Together.</h2>
+          <p class="section-subtitle">
+            I'm open to development opportunities, internships, collaborative projects, and opportunities to learn and build with new technologies.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Direct Channels Card -->
+          <div class="contact-info-card">
+            <h3>Direct Channels</h3>
+            <p>
+              Feel free to reach out for internship opportunities, project collaborations, or general questions. I usually respond within 24 hours.
+            </p>
+
+            <div class="contact-channels">
+              
+              <div class="channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="channel-text">
+                  <span class="channel-lbl">Location</span>
+                  <span class="channel-val">Kochi, Kerala, India</span>
+                </div>
+              </div>
+
+              <a href="mailto:reevdonatusben@gmail.com" class="channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="channel-text">
+                  <span class="channel-lbl">Direct Email</span>
+                  <span class="channel-val">reevdonatusben@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://linkedin.com/in/reev-donatus-ben" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+                <div class="channel-text">
+                  <span class="channel-lbl">LinkedIn</span>
+                  <span class="channel-val">linkedin.com/in/reev-donatus-ben</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/reevdonatus" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <div class="channel-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div class="channel-text">
+                  <span class="channel-lbl">GitHub</span>
+                  <span class="channel-val">github.com/reevdonatus</span>
+                </div>
+              </a>
+
+            </div>
+
+            <!-- Current Time Widget for Kochi (IST) -->
+            <div style="padding: 14px 18px; background: rgba(0,0,0,0.3); border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); display: flex; align-items: center; justify-content: space-between;">
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-dim);">LOCAL TIME (KOCHI &bull; IST / UTC+5:30):</span>
+              <strong id="liveClock" style="font-family: var(--font-mono); font-size: 0.95rem; color: var(--cyan);">--:--:--</strong>
+            </div>
+          </div>
+
+          <!-- Glassmorphic Contact Form -->
+          <div class="contact-form-wrap">
+            <form id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName" class="form-label">Your Name</label>
+                  <input type="text" id="contactName" name="name" class="form-control" placeholder="e.g. John Doe" required>
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail" class="form-label">Email Address</label>
+                  <input type="email" id="contactEmail" name="email" class="form-control" placeholder="john@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <input type="text" id="contactSubject" name="subject" class="form-control" placeholder="Internship Inquiry / Project Collaboration" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message Details</label>
+                <textarea id="contactMessage" name="message" class="form-control" rows="5" placeholder="Feel free to share details about opportunities, projects, or feedback..." required></textarea>
+              </div>
+
+              <button type="submit" id="submitFormBtn" class="btn btn-primary" style="width: 100%;">
+                <span>Send Message</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#hero" class="brand-logo" aria-label="Reev Donatus Ben">
+          <div class="brand-logo-icon">R</div>
+          <div class="brand-text-wrap">
+            <span class="brand-title">Reev Donatus Ben</span>
+            <span class="brand-tag">//dev</span>
+          </div>
+        </a>
+
+        <div style="font-size: 0.88rem; color: var(--text-muted); display: flex; align-items: center; gap: 8px;">
+          <span>📍 Based in Kochi, Kerala, India</span>
+          <span>&bull;</span>
+          <span>MCA Student &bull; Developer</span>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://github.com/reevdonatus" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://linkedin.com/in/reev-donatus-ben" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="mailto:reevdonatusben@gmail.com" class="icon-btn" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Reev Donatus Ben. Crafted with clean code &amp; responsive design.</div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#hero" style="color: var(--text-dim); text-decoration: none;">Back to top &uarr;</a>
+          <span style="color: var(--text-dim);">&bull;</span>
+          <span style="color: var(--emerald-light); font-family: var(--font-mono);">Available for Opportunities</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- QUICK VIEW PROJECT ARCHITECTURE & DETAILS MODAL -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalTitle">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div>
+          <span id="modalCategory" style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--cyan); text-transform: uppercase;">CATEGORY</span>
+          <h3 id="modalTitle" style="font-size: 1.35rem; color: #fff; margin-top: 4px;">Project Title</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Content will be injected dynamically by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- RESUME QUICK VIEW MODAL -->
+  <div class="modal-backdrop" id="resumeModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="resumeModalTitle">
+    <div class="modal-container" style="max-width: 780px;">
+      <div class="modal-header">
+        <div>
+          <span style="font-family: var(--font-mono); font-size: 0.78rem; color: var(--indigo-light); text-transform: uppercase;">ACADEMIC CV SUMMARY</span>
+          <h3 id="resumeModalTitle" style="font-size: 1.35rem; color: #fff; margin-top: 4px;">Reev Donatus Ben &mdash; Resume Summary</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="resumeModalCloseBtn" aria-label="Close resume modal">&times;</button>
+      </div>
+      <div class="modal-body" style="display: flex; flex-direction: column; gap: 22px;">
+        
+        <div style="padding: 16px; background: rgba(255,255,255,0.03); border-radius: var(--radius-md); border: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <div>
+            <h4 style="font-size: 1.1rem; color: #fff;">Reev Donatus Ben</h4>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">MCA Student &bull; Full-Stack &amp; Application Developer</div>
+            <div style="font-size: 0.82rem; color: var(--cyan); margin-top: 4px;">📍 Kochi, Kerala, India &bull; reevdonatusben@gmail.com</div>
+          </div>
+          <button type="button" class="btn btn-primary btn-sm" id="modalDownloadResumeBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Download CV</span>
+          </button>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; font-family: var(--font-mono); color: var(--cyan); text-transform: uppercase; margin-bottom: 8px;">Education</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem; color: #cbd5e1;">
+            <li><strong>Master of Computer Applications (MCA)</strong> &mdash; Kristu Jayanti College (Autonomous), Bengaluru (2024 &ndash; 2026, Current)</li>
+            <li><strong>Bachelor of Computer Applications (BCA)</strong> &mdash; Kristu Jayanti College (Autonomous), Bengaluru (2021 &ndash; 2024, Completed)</li>
+            <li><strong>Higher Secondary Education (+2 Science)</strong> &mdash; Kerala State Board (2019 &ndash; 2021, Completed)</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; font-family: var(--font-mono); color: var(--cyan); text-transform: uppercase; margin-bottom: 8px;">Key Projects</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem; color: #cbd5e1;">
+            <li><strong>RoadTrip Pro:</strong> Car-focused road trip planning web app with Google Maps API, fuel/EV station discovery, and Firestore database.</li>
+            <li><strong>Alibaba B2B Mobile App:</strong> Cross-platform mobile marketplace UI built in Flutter and Dart.</li>
+            <li><strong>Student Management Portal:</strong> Web database management system with PHP and MySQL.</li>
+            <li><strong>Linux Systems Automation:</strong> Defensive Bash monitoring scripts, diagnostic telemetry, and cron automation.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; font-family: var(--font-mono); color: var(--cyan); text-transform: uppercase; margin-bottom: 8px;">Technical Skills</h4>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+            <span class="tech-tag">C++</span>
+            <span class="tech-tag">JavaScript (ES6+)</span>
+            <span class="tech-tag">Flutter &amp; Dart</span>
+            <span class="tech-tag">HTML5 &amp; CSS3</span>
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">SQL / MySQL</span>
+            <span class="tech-tag">Firebase Firestore</span>
+            <span class="tech-tag">Google Maps API</span>
+            <span class="tech-tag">Git &amp; GitHub</span>
+            <span class="tech-tag">Linux / Bash</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toastNotification" role="alert" aria-live="assertive">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--emerald-light)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+    <span id="toastMessage">Action Successful!</span>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/script.js"></script>
+</body>
+</html>
