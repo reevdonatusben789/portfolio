@@ -7,6 +7,10 @@ Personal developer portfolio of **Reev Donatus Ben**, an MCA student and develop
 - **Location**: Kochi, Kerala, India
 - **Focus Areas**: Full-Stack Web Development, Mobile Development (Flutter & Dart), Database Management, and AI/API Integrations.
 
+## 🎓 Education
+- **Master of Computer Applications (MCA)** — SCMS School of Technology and Management (SSTM), Kochi (2024 – 2026, Current)
+- **Bachelor of Computer Applications (BCA)** — Kristu Jayanti College (Autonomous), Bengaluru (2021 – 2024, Completed)
+
 ## 🛠️ Technology Stack
 - **Languages**: C++, JavaScript (ES6+), Dart, PHP, Python
 - **Frontend**: HTML5, CSS3, Vanilla JS, Responsive Design, Canvas API

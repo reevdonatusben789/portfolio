@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
         this.vx = (Math.random() - 0.5) * 0.28;
         this.vy = (Math.random() - 0.5) * 0.28;
         this.radius = Math.random() * 1.4 + 0.6;
-        this.color = Math.random() > 0.5 ? 'rgba(6, 182, 212, ' : 'rgba(99, 102, 241, ';
-        this.alpha = Math.random() * 0.3 + 0.15;
+        this.color = Math.random() > 0.4 ? 'rgba(148, 163, 184, ' : 'rgba(16, 185, 129, ';
+        this.alpha = Math.random() * 0.25 + 0.12;
       }
 
       update() {
@@ -102,9 +102,9 @@ document.addEventListener('DOMContentLoaded', () => {
           const dist = Math.sqrt(dx * dx + dy * dy);
 
           if (dist < maxDistance) {
-            const lineAlpha = (1 - dist / maxDistance) * 0.14;
-            ctx.strokeStyle = `rgba(99, 102, 241, ${lineAlpha})`;
-            ctx.lineWidth = 0.8;
+            const lineAlpha = (1 - dist / maxDistance) * 0.1;
+            ctx.strokeStyle = `rgba(148, 163, 184, ${lineAlpha})`;
+            ctx.lineWidth = 0.7;
             ctx.beginPath();
             ctx.moveTo(particles[a].x, particles[a].y);
             ctx.lineTo(particles[b].x, particles[b].y);
@@ -360,7 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px;">
           ${data.architecture.map(item => `
             <li style="position: relative; padding-left: 18px; font-size: 0.92rem; color: #cbd5e1; line-height: 1.6;">
-              <span style="position: absolute; left: 0; color: var(--cyan); font-weight: bold;">▹</span>
+              <span style="position: absolute; left: 0; color: var(--emerald); font-weight: bold;">▹</span>
               ${item}
             </li>
           `).join('')}
