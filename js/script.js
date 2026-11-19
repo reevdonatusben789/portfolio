@@ -422,6 +422,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const resumeModal = document.getElementById('resumeModal');
   const viewResumeModalBtn = document.getElementById('viewResumeModalBtn');
   const resumeModalCloseBtn = document.getElementById('resumeModalCloseBtn');
+  const modalCloseBottomBtn = document.getElementById('modalCloseBottomBtn');
   const downloadResumeBtn = document.getElementById('downloadResumeBtn');
   const modalDownloadResumeBtn = document.getElementById('modalDownloadResumeBtn');
   const navResumeBtn = document.getElementById('navResumeBtn');
@@ -448,6 +449,10 @@ document.addEventListener('DOMContentLoaded', () => {
     resumeModalCloseBtn.addEventListener('click', closeResumeModal);
   }
 
+  if (modalCloseBottomBtn) {
+    modalCloseBottomBtn.addEventListener('click', closeResumeModal);
+  }
+
   if (resumeModal) {
     resumeModal.addEventListener('click', (e) => {
       if (e.target === resumeModal) {
@@ -456,18 +461,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  function handleResumeDownload() {
-    openResumeModal();
-    showToast('Resume summary opened. You can review academic qualifications, projects & skills directly.', true);
-  }
-
   if (downloadResumeBtn) {
-    downloadResumeBtn.addEventListener('click', handleResumeDownload);
+    downloadResumeBtn.addEventListener('click', () => {
+      showToast('Downloading official resume PDF (Reev Donatus Ben)...', true);
+    });
   }
 
   if (modalDownloadResumeBtn) {
     modalDownloadResumeBtn.addEventListener('click', () => {
-      window.print();
+      showToast('Downloading official resume PDF...', true);
     });
   }
 

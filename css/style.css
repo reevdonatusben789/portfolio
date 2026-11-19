@@ -1826,6 +1826,18 @@ textarea.form-control {
   }
 }
 
+/* Resume Modal Specific Styles */
+.resume-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 640px) {
+  .resume-grid-2col {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Accessibility: Reduced Motion */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
@@ -1833,5 +1845,38 @@ textarea.form-control {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* Print Styles for Resume */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #resumeModal, #resumeModal * {
+    visibility: visible;
+  }
+  #resumeModal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff !important;
+    color: #111 !important;
+    display: block !important;
+    opacity: 1 !important;
+    padding: 0 !important;
+  }
+  .modal-container {
+    box-shadow: none !important;
+    border: none !important;
+    background: #fff !important;
+    color: #111 !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  .modal-header, .modal-close-btn, #modalDownloadResumeBtn, #modalCloseBottomBtn {
+    display: none !important;
   }
 }
